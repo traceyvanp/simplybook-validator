@@ -5,8 +5,11 @@ include_once 'ExternalValidatorException.php';
 include_once 'ExternalValidator.php';
 
 echo "are you here?";
-/*
+
 $incomingData = file_get_contents('php://input');
+echo $incomingData;
+
+/*
 $obj = json_decode($incomingData, true);
 $childs = implode("", $obj);
 echo $childs;
