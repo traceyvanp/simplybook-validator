@@ -16,9 +16,10 @@ echo "are you here??"
 
 if(!$incomingData){
 //if($incomingData['service_id'] == "14"){
-    echo json_encode(array());
+    echo $incomingData;
+    //echo json_encode(array());
 } else {
-    echo "Some Error";
+    echo $incomingData;
 /*
     $validator = new ExternalValidator();
     $result = $validator->validate($incomingData);
