@@ -5,7 +5,7 @@ include_once 'ExternalValidatorException.php';
 include_once 'ExternalValidator.php';
 
 $incomingData = file_get_contents('php://input/booking');
-$incomingData = json_decode($incomingData['booking'], true);
+$incomingData = json_decode($incomingData['current_booking'], true);
 /*
 $childs = implode("", $incomingData);
 echo $childs;
