@@ -6,7 +6,7 @@ include_once 'ExternalValidator.php';
 
 echo "are you here?";
 
-$incomingData = file_get_contents('php://input');
+$incomingData = json_decode(file_get_contents('php://input'), true);
 echo $incomingData;
 
 /*
