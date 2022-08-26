@@ -4,18 +4,16 @@
 include_once 'ExternalValidatorException.php';
 include_once 'ExternalValidator.php';
 
-$incomingData = file_get_contents('php://input/booking');
-$incomingData = json_decode($incomingData['current_booking'], true);
+$incomingData = json_decode(file_get_contents('php://input/booking'),true);
+$incomingData = $incomingData['current_booking'];
+
 /*
-$childs = implode("", $incomingData);
-echo $childs;
-echo "are you here??"
+//uncomment for local testing
+$incomingData = json_decode(file_get_contents('booking.json'),true);
+$incomingData = $incomingData['current_booking'];
 */
 
-//uncomment for local testing
-//$incomingData = json_decode(file_get_contents('booking.json'),true);
-
-if($incomingData['service_id'] == "14"){
+if($incomingData['service_id'] === "14"){
     echo json_encode(array());
 } else {
     $validator = new ExternalValidator();
