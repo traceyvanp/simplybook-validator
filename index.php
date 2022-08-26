@@ -14,8 +14,8 @@ echo "are you here??"
 //uncomment for local testing
 //$incomingData = json_decode(file_get_contents('booking.json'),true);
 
-
-if($incomingData['service_id'] == "14"){
+if(!$incomingData){
+//if($incomingData['service_id'] == "14"){
     echo json_encode(array());
 } else {
     echo "Some Error";
