@@ -1,0 +1,513 @@
+{
+    "current_booking": {
+        "id": null,
+        "location_id": "1",
+        "category_id": null,
+        "service_id": "15",
+        "provider_id": "1",
+        "start_date": "2022-10-03",
+        "start_time": "08:30:00",
+        "end_date": null,
+        "end_time": null,
+        "code": null,
+        "hash": null,
+        "client_name": "Tracey",
+        "client_email": "traceyvanp@gmail.com",
+        "client_phone": "+14172574456",
+        "promo_code": null,
+        "price_with_tax": null,
+        "price_without_tax": null,
+        "products": [
+            {
+                "id": "13",
+                "name": "Combo",
+                "description": "<p><br></p><table class=\"table table-bordered\"><tbody><tr><td>Pheasant</td><td>2</td></tr><tr><td>Quail</td><td>8</td></tr><tr><td>Chukar</td><td>3</td></tr></tbody></table><p><br></p>",
+                "price": 149,
+                "currency": "USD",
+                "default_qty": "0",
+                "qty": 1,
+                "barcode": null,
+                "plugin_invoice_tax_id": null,
+                "file_id": "19",
+                "position": "1",
+                "is_active": "1",
+                "is_visible": "1",
+                "type": "product",
+                "duration": "0",
+                "picture": "3b9681673b8802af3b811e241cf72708.png",
+                "picture_sub_path": "/image_files",
+                "picture_path": "/uploads/ozarkwings/image_files/preview/3b9681673b8802af3b811e241cf72708.png",
+                "price_without_tax": 149,
+                "price_with_tax": 149,
+                "show_tax": true,
+                "services": [
+                    {
+                        "service_id": "15",
+                        "qty": "0"
+                    },
+                    {
+                        "service_id": "17",
+                        "qty": "0"
+                    }
+                ],
+                "tax": null
+            }
+        ],
+        "count": "1",
+        "with_deposit": false,
+        "is_pay_full_price_without_deposit": false,
+        "sheduler_channel": null,
+        "client_hash": "29c578dcd2c12f2f7d9933f4901403ac",
+        "client_id": "599",
+        "addons": null,
+        "wl": null,
+        "dates": [],
+        "additional_fields": {
+            "7008b1093d4364990ee9d7489967a0e3": "2",
+            "00c438e5d44942a5885f6526aedd53f2": "No",
+            "d6a81f257114e020001509bcab18c7d3": true
+        },
+        "additional_fields_values": [
+            {
+                "field_title": "How many hunters are in this group? (Note: four (4) hunters max are allowed per group. To book for more, please add another hunt. There must be at least as many packages booked as hunters, or booking will not be confirmed.)",
+                "field_type": "select",
+                "field_position": "1",
+                "value": "1"
+            },
+            {
+                "field_title": "Do you have any hunters under the age of 14 in your group? If yes, please call us at 1-800-789-8524.",
+                "field_type": "select",
+                "field_position": "10",
+                "value": "No"
+            },
+            {
+                "field_title": "I agree that the price shown is a base quote per hunter, and does not include fees such as extra birds, bird cleaning, Missouri state sales tax and gratuity.",
+                "field_type": "checkbox",
+                "field_position": "19",
+                "value": true
+            }
+        ],
+        "terms": {
+            "simplybook_terms": "20200812",
+            "user_terms": null,
+            "cancellation_terms": null,
+            "promotion_letters": "1"
+        },
+        "batch_model": null,
+        "start_datetime_raw": "2022-10-03T06:30:00.000Z",
+        "start_datetime": "2022-10-03T06:30:00.000Z",
+        "prices": {
+            "items": [
+                {
+                    "name": "Guided",
+                    "type": "service",
+                    "price": 100,
+                    "tax": null,
+                    "currency": "USD",
+                    "duration": "240",
+                    "qty": "1"
+                },
+                {
+                    "name": "Combo",
+                    "type": "product",
+                    "currency": "USD",
+                    "duration": "0",
+                    "price": 149,
+                    "deposit": 0,
+                    "tax": null,
+                    "qty": 1
+                }
+            ],
+            "totals": {
+                "taxes": [],
+                "total": 249,
+                "totalDeposit": 0,
+                "currency": "USD"
+            }
+        }
+    },
+    "require_confirm": false,
+    "bookings": [
+        {
+            "service_id": "15",
+            "provider_id": "1",
+            "start_date": "2022-10-03",
+            "start_time": "08:30:00",
+            "end_date": "2022-10-03",
+            "end_time": "12:30:00",
+            "id": "406",
+            "is_confirm": "1",
+            "code": "584b9qj4",
+            "hash": "ffda00459c6b2ce31fd6a6e5c445a6a6",
+            "time_offset": "0",
+            "time_zone": "",
+            "status": "pending",
+            "is_cancellable": "1",
+            "event_duration": "240",
+            "event_buffertime_before": "0",
+            "event_buffertime_after": "0",
+            "client_id": "599",
+            "invoice_id": "139",
+            "invoice_status": "new",
+            "invoice_number": "O-00000139",
+            "invoice_payment_received": false,
+            "location_id": "1",
+            "products": [
+                {
+                    "id": "13",
+                    "price": 149,
+                    "price_without_tax": 149,
+                    "price_with_tax": 149,
+                    "show_tax": true,
+                    "currency": "USD",
+                    "qty": "1",
+                    "name": "Combo",
+                    "type": "product",
+                    "description": "<p><br></p><table class=\"table table-bordered\"><tbody><tr><td>Pheasant</td><td>2</td></tr><tr><td>Quail</td><td>8</td></tr><tr><td>Chukar</td><td>3</td></tr></tbody></table><p><br></p>",
+                    "is_active": "1",
+                    "is_visible": "1",
+                    "duration": "0"
+                }
+            ],
+            "additional_fields_values": [
+                {
+                    "value": "1",
+                    "field_name": "7008b1093d4364990ee9d7489967a0e3",
+                    "field_title": "How many hunters are in this group? (Note: four (4) hunters max are allowed per group. To book for more, please add another hunt. There must be at least as many packages booked as hunters, or booking will not be confirmed.)",
+                    "field_position": "1",
+                    "field_type": "select",
+                    "field_id": "1",
+                    "field_pos": "1",
+                    "field_values": "1,2,3,4"
+                },
+                {
+                    "value": "No",
+                    "field_name": "00c438e5d44942a5885f6526aedd53f2",
+                    "field_title": "Do you have any hunters under the age of 14 in your group? If yes, please call us at 1-800-789-8524.",
+                    "field_position": "10",
+                    "field_type": "select",
+                    "field_id": "2",
+                    "field_pos": "10",
+                    "field_values": "Yes,No"
+                },
+                {
+                    "value": "1",
+                    "field_name": "d6a81f257114e020001509bcab18c7d3",
+                    "field_title": "I agree that the price shown is a base quote per hunter, and does not include fees such as extra birds, bird cleaning, Missouri state sales tax and gratuity.",
+                    "field_position": "19",
+                    "field_type": "checkbox",
+                    "field_id": "7",
+                    "field_pos": "19",
+                    "field_values": null
+                }
+            ],
+            "can_reschedule_booking": false,
+            "can_reschedule_booking_error_reason": "reschedule_booking_approve_booking_plugin_activated",
+            "service": {
+                "id": "15",
+                "name": "Guided",
+                "duration": "240",
+                "buffertime_before": "0",
+                "buffertime_after": "0",
+                "hide_duration": "0",
+                "description": "",
+                "is_public": "1",
+                "is_active": "1",
+                "position": "39",
+                "file_id": "43",
+                "seo_url": null,
+                "is_recurring": "0",
+                "picture": "e61ad7a49f52721c51a00807b30f1344.jpg",
+                "picture_sub_path": "/image_files",
+                "is_visible": "1",
+                "picture_path": "/uploads/ozarkwings/image_files/preview/e61ad7a49f52721c51a00807b30f1344.jpg",
+                "unit_map": {
+                    "1": null,
+                    "2": null,
+                    "4": null,
+                    "12": null,
+                    "13": null
+                },
+                "providers": [
+                    1,
+                    2,
+                    13,
+                    12,
+                    4
+                ],
+                "price": "100.0000",
+                "plugin_invoice_tax_id": null,
+                "currency": "USD",
+                "deposit": "100.0000",
+                "deposit_is_enabled": "0",
+                "bonus_is_enabled": true,
+                "bonus": 100,
+                "price_without_tax": 100,
+                "price_with_tax": 100,
+                "show_tax": false,
+                "tax": null,
+                "additional_fields": [
+                    "1",
+                    "2",
+                    "7"
+                ],
+                "products": [
+                    {
+                        "product_id": "11",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "23",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "18",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "13",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "24",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "19",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "14",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "25",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "20",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "15",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "26",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "21",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "16",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "27",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "22",
+                        "qty": "0"
+                    },
+                    {
+                        "product_id": "17",
+                        "qty": "0"
+                    }
+                ],
+                "resource_groups": [
+                    {
+                        "resource_group_id": "1",
+                        "qty": "1",
+                        "is_multiple": "1"
+                    }
+                ],
+                "classes_plugin_info": {
+                    "unit_group_binded_in_class": null,
+                    "unit_groups_binded_in_classes": []
+                }
+            },
+            "provider": {
+                "id": "1",
+                "name": "Cory Purgason",
+                "description": "",
+                "phone": "+14172574445",
+                "email": "corypurgason_1@hotmail.com",
+                "station_id": "1",
+                "qty": "1",
+                "is_active": "1",
+                "position": "1",
+                "is_visible": "1",
+                "file_id": "34",
+                "seo_url": "ozark-wings-hunting-preserve",
+                "picture": "afb4cfef53bce498946a8082b889c947.jpg",
+                "picture_sub_path": "/image_files",
+                "picture_path": "/uploads/ozarkwings/image_files/preview/afb4cfef53bce498946a8082b889c947.jpg",
+                "color": "",
+                "event_map": {
+                    "1": null,
+                    "11": null,
+                    "13": null,
+                    "15": null
+                },
+                "services": [
+                    1,
+                    11,
+                    13,
+                    15
+                ],
+                "locations": [
+                    "1"
+                ],
+                "position_in_location": {
+                    "1": "1"
+                },
+                "classes_plugin_info": {
+                    "event_binded_in_class": null,
+                    "events_binded_in_classes": []
+                }
+            },
+            "calendar_description": "You were appointed to Guided event with Cory Purgason provider.",
+            "location": {
+                "id": "1",
+                "title": "Guided",
+                "description": "<p>Choose this if you require a guide and dogs. This service is a $100 flat fee per group of 4 or less.</p>",
+                "address1": "",
+                "address2": "",
+                "city": "",
+                "zip": "",
+                "country_id": "US",
+                "lat": "36.62089900000000000000",
+                "lng": "-92.10981800000000000000",
+                "phone": "",
+                "position": "1",
+                "is_default": "0",
+                "file_id": "46",
+                "seo_url": null,
+                "is_visible": "1"
+            }
+        }
+    ],
+    "cart": [],
+    "batch_type": null,
+    "batch_hash": null,
+    "batch_id": null,
+    "confirm": true,
+    "invoice": {
+        "client_additional_info": [],
+        "id": 139,
+        "number": "O-00000139",
+        "datetime": "2022-08-26 06:05:12",
+        "due_datetime": "2022-08-26 06:15:12",
+        "payment_datetime": null,
+        "amount": 249,
+        "deposit": 249,
+        "is_with_deposit_amount": false,
+        "rest_amount": 0,
+        "discount_amount": 0,
+        "taxes": [],
+        "tax_amount": 0,
+        "currency": "USD",
+        "client_id": 599,
+        "description": "",
+        "payment_received": false,
+        "payment_processor": null,
+        "lines": [
+            {
+                "booking_ids": [
+                    406
+                ],
+                "bookings": [
+                    {
+                        "id": 406,
+                        "code": "584b9qj4",
+                        "start_datetime": "2022-10-03 08:30:00",
+                        "end_datetime": "2022-10-03 12:30:00",
+                        "location_id": 1,
+                        "category_id": null,
+                        "service_id": 15,
+                        "provider_id": 1,
+                        "client_id": 599,
+                        "duration": null
+                    }
+                ],
+                "tickets": [],
+                "deposit": 100,
+                "is_with_deposit_amount": false,
+                "description_string": "Service: Guided (10.03.2022 08:30 AM, 584b9qj4) x1 100.00 USD",
+                "id": "355",
+                "invoice_id": 139,
+                "object_name": "Guided (10.03.2022 08:30 AM, 584b9qj4)",
+                "name": "Guided (10.03.2022 08:30 AM, 584b9qj4)",
+                "type": "booking",
+                "discount_ratio": 0,
+                "discount_amount": 0,
+                "discount": 0,
+                "price": 100,
+                "price_without_tax": 100,
+                "final_price": 100,
+                "recurring_price_without_tax": 0,
+                "qty": 1,
+                "package_qty": 0,
+                "tax": null,
+                "tax_ratio": 0,
+                "tax_amount": 0,
+                "amount": 100,
+                "recurring_tax_amount": 0,
+                "rest_amount": 0,
+                "currency": "USD"
+            },
+            {
+                "product_id": 13,
+                "product": {
+                    "id": 13,
+                    "name": "Combo",
+                    "barcode": null,
+                    "description": "<p><br></p><table class=\"table table-bordered\"><tbody><tr><td>Pheasant</td><td>2</td></tr><tr><td>Quail</td><td>8</td></tr><tr><td>Chukar</td><td>3</td></tr></tbody></table><p><br></p>",
+                    "price": 149,
+                    "currency": "USD",
+                    "tax_id": null,
+                    "tax": null,
+                    "duration": 0,
+                    "type": "product"
+                },
+                "booking_id": 406,
+                "description_string": "Products for sale: Combo (Booking #584b9qj4) x1 149.00 USD",
+                "id": "356",
+                "invoice_id": 139,
+                "object_name": "Combo (Booking #584b9qj4)",
+                "name": "Combo (Booking #584b9qj4)",
+                "type": "product",
+                "discount_ratio": 0,
+                "discount_amount": 0,
+                "discount": 0,
+                "price": 149,
+                "price_without_tax": 149,
+                "final_price": 149,
+                "recurring_price_without_tax": 0,
+                "qty": 1,
+                "package_qty": 0,
+                "tax": null,
+                "tax_ratio": 0,
+                "tax_amount": 0,
+                "amount": 149,
+                "recurring_tax_amount": 0,
+                "deposit": 149,
+                "is_with_deposit_amount": false,
+                "rest_amount": 0,
+                "currency": "USD"
+            }
+        ],
+        "status": "new",
+        "support_recurring_payment_method": false,
+        "recurring_profile_id": null,
+        "promotion_instances": [],
+        "package_instances": [],
+        "deposit_child_invoice": null,
+        "deposit_parent_invoice": null,
+        "refund_datetime": null,
+        "sbpay_reference_id": null
+    }
+}
