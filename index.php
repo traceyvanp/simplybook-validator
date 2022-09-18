@@ -1,5 +1,6 @@
 <?php
 
+file_put_contents('test.dat', file_get_contents('php://input'));
 
 include_once 'ExternalValidatorException.php';
 include_once 'ExternalValidator.php';
