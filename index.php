@@ -24,8 +24,8 @@ if(!$incomingData){
 $incomingData = json_decode(file_get_contents('booking.json'),true);
 if($incomingData['service_id'] === "14"){
     echo json_encode(array());
-    echo "service is 14";
 } else {
+    echo "here";
     $validator = new ExternalValidator();
     $result = $validator->validate($incomingData);
     echo json_encode($result);
