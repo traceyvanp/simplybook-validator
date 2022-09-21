@@ -8,7 +8,14 @@ class ExternalValidator {
 
     protected $_errors = array(
         self::PRODUCT_ERROR => 'The number of hunt packages must be equal to or greater than the number of hunters in your party.',
-        self::INTAKE_FORM_UNKNOWN_CHECK => '"Number of Hunters" field is missing.',
+        self::INTAKE_FORM_UNKNOWN_CHECK => '"Number of Hunters" field is missing.'
+    );
+
+    protected $_fieldsNameMap = array(
+        'hunters_id' => '7008b1093d4364990ee9d7489967a0e3'
+        //'checkNumber' => 'Check number',
+        //'checkString' => 'Some string',
+        //'dateOfBirth' => 'Date of birth',
     );
 
     public function validate($bookingData){
@@ -16,13 +23,13 @@ class ExternalValidator {
             $timeStart = microtime(true);
             $this->_log($bookingData);
             //return the value of the first intake field id converted to integer value.
-            $numhuntersField = $this->_huntervalue($bookingData['additional_fields']);
+            $numhuntersField = $this->_findField('hunters_id', $bookingData['additional_fields_values'], $this->_fieldsNameMap);
             //loop through the products array and return the sum of the product quantities.
             $products = $this->_sumproducts($bookingData);
             
 
             //Validate that the number of hunters is less than or equal to the sum of products, else return an error.
-            if ($numhuntersField > $products) {
+            if (intval($numhuntersField['value']) > $products) {
                 $this->_error(self::PRODUCT_ERROR);
                 return false; 
                 }
@@ -46,17 +53,27 @@ class ExternalValidator {
 
     //function to return sum of quantity of products
     protected function _sumproducts($data) {
+        $sum = 0;
         foreach($data['products'] as $elem) {
             $sum += intval(($elem['qty']));
         }
         return $sum;
     }
 
-    //function to return number of hunters as int
-    protected function _huntervalue($data) {
-        $key = "7008b1093d4364990ee9d7489967a0e3";
-        return intval($data[$key]);
+    protected function _findField($fieldKey, $addFields, $map){
+        $mapType = 'field_name';
+
+        if(isset($map[$fieldKey])) {
+            $fieldName = $map[$fieldKey];
+
+            foreach ($addFields as $additionalField) {
+                if (strtolower(trim($additionalField[$mapType])) == strtolower(trim($fieldName))) {
+                    return $additionalField;
+                }
+            }
         }
+        return null;
+    }
 
 
     /**
