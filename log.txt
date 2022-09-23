@@ -1092,3 +1092,12 @@ array(11) {
 }
 
 --------------------------------
+
+
+--------------------------------
+22.09.2022 14:41:25
+/Users/traceyvanpuyvelde/Documents/Git_repositories/tracey/ExternalValidator.php : 24
+
+NULL
+
+--------------------------------

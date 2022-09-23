@@ -45,7 +45,7 @@
                 "field_title": "How many hunters are in this group? (Note: four (4) hunters max are allowed per group. To book for more, please add another hunt. There must be at least as many packages booked as hunters, or booking will not be confirmed.)",
                 "field_type": "select",
                 "field_position": "1",
-                "value": "2",
+                "value": "3",
                 "field_name": "7008b1093d4364990ee9d7489967a0e3",
                 "field_id": "1"
             },
