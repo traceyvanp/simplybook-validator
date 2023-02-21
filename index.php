@@ -1,23 +1,32 @@
 <?php
 
-//require('../vendor/autoload.php');
-include_once 'ExternalValidatorException.php';
-include_once 'ExternalValidator.php';
+$response = get_web_page("https://ozarkwings.com/simplybook.me/v2/booking");
+$resArr = array();
+$resArr = json_decode($response);
+echo "<pre>"; print_r($resArr); echo "</pre>";
+#print(json_encode($resArr));
 
+function get_web_page($url) {
+    $options = array(
+        CURLOPT_RETURNTRANSFER => true,   // return web page
+        CURLOPT_HEADER         => false,  // don't return headers
+        CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+        CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+        CURLOPT_ENCODING       => "",     // handle compressed
+        CURLOPT_USERAGENT      => "test", // name of client
+        CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+        CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+        CURLOPT_TIMEOUT        => 120,    // time-out on response
+    ); 
 
-$incomingData = json_decode(file_get_contents('php://input'),true);
-//uncomment below for local testing
-//$incomingData = json_decode(file_get_contents('booking.json'),true);
-print(json_encode($incomingData));
+    $ch = curl_init($url);
+    curl_setopt_array($ch, $options);
 
-/*
-//the service is lodging (id 14) then don't run the validation
-if($incomingData['service_id'] === '14'){
-    echo json_encode(array());
-} else {
-    $validator = new ExternalValidator();
-    $result = $validator->validate($incomingData);
-    echo json_encode($result);
+    $content  = curl_exec($ch);
+
+    curl_close($ch);
+
+    return $content;
 }
-*/
+
 ?>
