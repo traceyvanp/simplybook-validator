@@ -3,8 +3,8 @@
 $response = get_web_page("https://ozarkwings.com/simplybook.me/v2/booking");
 $resArr = array();
 $resArr = json_decode($response);
-echo "<pre>"; print_r($resArr); echo "</pre>";
-#print(json_encode($resArr));
+#echo "<pre>"; print_r($resArr); echo "</pre>";
+print_r(json_encode($resArr));
 
 function get_web_page($url) {
     $options = array(
