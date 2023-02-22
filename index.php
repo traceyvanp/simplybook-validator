@@ -1,6 +1,6 @@
 <?php
 
-$incomingData = json_decode(file_get_contents('php://input'),true);
+//$incomingData = json_decode(file_get_contents('php://input'),true);
 $incomingData = 1
 
 
