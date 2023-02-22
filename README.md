@@ -4,43 +4,25 @@ You can validate bookings through the use of an external script. The script can 
 
 ---
 
-This script needs to verify that the value for the id **"7008b1093d4364990ee9d7489967a0e3"** (intake form question id for number of hunters) under "additional_fields" is less than or equal to the total sum of products.
+This script needs to verify that a booking can not be made if the value for the question **"Is anyone in your party under the age of 18?"** is "Yes".
 
 Incoming data example:
 ```
 {
-    "current_booking": {
-        "id": null,
-        "location_id": "1",
-        "category_id": null,
-        "service_id": "15",
-        "provider_id": "1",
-        "start_date": "2022-10-03",
-        "start_time": "08:30:00",
-        "end_date": null,
-        "end_time": null,
-        "code": null,
-        "hash": null,
-        "promo_code": null,
-        "price_with_tax": null,
-        "price_without_tax": null,
-        "products": [
-            {
-                "id": "11",
-                "qty": 1
-            },
-            {
-                "id": "13",
-                "qty": "2"
-            }
-        ],
-        "count": "1",
-        "additional_fields": {
-            "7008b1093d4364990ee9d7489967a0e3": "4",
-            "00c438e5d44942a5885f6526aedd53f2": "No",
-            "d6a81f257114e020001509bcab18c7d3": true
+    "service_id":"9",
+    "provider_id":"45",
+    "client_id":"8123",
+    "start_datetime":"2021-01-11 11:40:00",
+    "end_datetime":"2021-01-11 11:45:00",
+    "count":1,
+    "additional_fields":[
+        {
+            "id":"7008b1093d4364990ee9d7489967a0e3",
+            "name":"Is anyone in your party under the age of 18?",
+            "value":"Yes"
         }
-        }
+    ]
+}
 ```
 ---
 
@@ -55,6 +37,6 @@ Output data example (in case of successful validation):
 Output data example (in case of product sum being less than intake field value):
 ```
 {
-    "errors":["The number of hunt packages must be equal to or greater than the number of hunters in your party."]
+    "errors":["Please call us at ____ to book."]
 }
 ```
