@@ -1,7 +1,5 @@
 <?php
 
-//$incomingData = json_decode(file_get_contents('php://input'),true);
-
 $incomingData = json_decode('{
     "service_id":"17",
     "provider_id":"6",
@@ -32,7 +30,6 @@ $incomingData = json_decode('{
         }
     ]
 }',true);
-
 
 if(!$incomingData){
     echo json_encode(array());
